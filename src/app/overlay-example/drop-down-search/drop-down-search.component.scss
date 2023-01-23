@@ -1,0 +1,44 @@
+$input-width: 30rem;
+
+:host {
+  display: block;
+}
+
+.drop-down-input {
+  max-width: $input-width;
+  width: 90vw;
+}
+
+.drop-down-serch-panel {
+  width: $input-width + 5rem;
+  min-height: 5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.05);
+
+  &.drop-down-panel-active {
+    background-color: #fff;
+  }
+
+  &_controls {
+    display: flex;
+    margin: -1rem -1rem 0 -1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+.result-item {
+  display: flex;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(black, 0.12)
+  }
+
+  span {
+    margin: 0 1rem;
+    flex-grow: 1;
+  }
+}

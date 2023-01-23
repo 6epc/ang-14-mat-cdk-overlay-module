@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.mat-form-field-label {
+  color: rgba(black, .70);
+}
+
+.mat-slide-toggle-bar {
+  background-color: rgba(black, .2);
+}
+
+.mat-divider {
+  border-top-color: rgba(black, 0.12);
+}
+
+
+.mat-slide-toggle-thumb {
+  background: white;
+}
+
+.drop-down-input-active {
+  z-index: 100000;
+
+  &.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fff;
+  }
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgba(0, 0, 0, .1);
+  color: rgba(black, .87);
+
+  placehodler input.mat-input-element {
+    color: rgba(black, .87);
+  }
+
+  input.mat-input-element::placeholder {
+    color: rgba(black, .87);
+  }
+}
+
+.no-enogh-space-at-bottom .drop-down-serch-panel  {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
